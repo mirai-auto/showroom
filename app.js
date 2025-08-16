@@ -1,166 +1,204 @@
-// Translation data
+// Language switching functionality
 const translations = {
-  "en": {
-    "hero_title": "Premium Used Cars",
-    "hero_subtitle": "Quality Pre-Owned Vehicles You Can Trust",
-    "phone": "Phone",
-    "email": "Email",
-    "get_started": "Get Started Today",
-    "trusted_brands": "Trusted Automotive Brands",
-    "about_title": "About Our Dealership",
-    "about_description": "We are a trusted used car dealership committed to providing quality pre-owned vehicles to our customers. With years of experience in the automotive industry, we carefully inspect every vehicle to ensure reliability and customer satisfaction.",
-    "leadership_title": "Our Leadership Team",
-    "contact_title": "Contact Us",
-    "contact_description": "Ready to find your perfect used car? Get in touch with us today!",
-    "name": "Full Name",
-    "your_email": "Your Email",
-    "your_phone": "Your Phone",
-    "message": "Message",
-    "send_message": "Send Message",
-    "services": ["Quality Used Cars", "Certified Pre-owned Vehicles", "Financing Options", "Trade-in Services", "Professional Inspection"]
+  en: {
+    hero_title: "MIRAI Premium Vehicles",
+    hero_subtitle: "Quality Used Cars, New Vehicles, and More You Can Trust",
+    phone: "Phone",
+    email: "Email",
+    get_started: "Get Started Today",
+    trusted_brands: "Trusted Automotive Brands",
+    about_title: "About MIRAI Dealership",
+    about_description: "We are MIRAI, a trusted dealership committed to providing quality vehicles and machinery to our customers. With years of experience in the automotive industry, we carefully inspect every vehicle to ensure reliability and customer satisfaction.",
+    leadership_title: "Our Leadership Team",
+    contact_title: "Contact Information",
+    contact_description: "Get in touch with MIRAI for quality vehicles and professional service.",
+    our_services: "Our Services",
+    ceo_title: "Chief Executive Officer",
+    email_contact: "Email Contact",
+    services: [
+      "Quality Used Cars",
+      "Certified Pre-owned Vehicles", 
+      "New Cars",
+      "Bikes",
+      "Bicycles", 
+      "Heavy Machinery",
+      "Financing Options"
+    ]
   },
-  "ar": {
-    "hero_title": "سيارات مستعملة مميزة",
-    "hero_subtitle": "مركبات مستعملة عالية الجودة يمكنك الوثوق بها",
-    "phone": "الهاتف",
-    "email": "البريد الإلكتروني",
-    "get_started": "ابدأ اليوم",
-    "trusted_brands": "علامات تجارية موثوقة للسيارات",
-    "about_title": "حول وكالتنا",
-    "about_description": "نحن وكالة سيارات مستعملة موثوقة ملتزمة بتوفير مركبات مستعملة عالية الجودة لعملائنا. مع سنوات من الخبرة في صناعة السيارات، نقوم بفحص كل مركبة بعناية لضمان الموثوقية ورضا العملاء.",
-    "leadership_title": "فريق القيادة لدينا",
-    "contact_title": "اتصل بنا",
-    "contact_description": "مستعد للعثور على سيارتك المستعملة المثالية؟ تواصل معنا اليوم!",
-    "name": "الاسم الكامل",
-    "your_email": "بريدك الإلكتروني",
-    "your_phone": "رقم هاتفك",
-    "message": "الرسالة",
-    "send_message": "إرسال الرسالة",
-    "services": ["سيارات مستعملة عالية الجودة", "مركبات مستعملة معتمدة", "خيارات التمويل", "خدمات استبدال السيارات", "فحص مهني"]
+  ar: {
+    hero_title: "ميراي للمركبات المميزة",
+    hero_subtitle: "سيارات مستعملة عالية الجودة ومركبات جديدة والمزيد يمكنك الوثوق به",
+    phone: "الهاتف",
+    email: "البريد الإلكتروني",
+    get_started: "ابدأ اليوم",
+    trusted_brands: "علامات تجارية موثوقة للسيارات",
+    about_title: "حول وكالة ميراي",
+    about_description: "نحن ميراي، وكالة موثوقة ملتزمة بتوفير مركبات وآلات عالية الجودة لعملائنا. مع سنوات من الخبرة في صناعة السيارات، نقوم بفحص كل مركبة بعناية لضمان الموثوقية ورضا العملاء.",
+    leadership_title: "فريق القيادة لدينا",
+    contact_title: "معلومات الاتصال",
+    contact_description: "تواصل مع ميراي للحصول على مركبات عالية الجودة وخدمة مهنية.",
+    our_services: "خدماتنا",
+    ceo_title: "الرئيس التنفيذي",
+    email_contact: "الاتصال عبر البريد الإلكتروني",
+    services: [
+      "سيارات مستعملة عالية الجودة",
+      "مركبات مستعملة معتمدة",
+      "سيارات جديدة", 
+      "دراجات نارية",
+      "دراجات هوائية",
+      "آلات ثقيلة",
+      "خيارات التمويل"
+    ]
   },
-  "ja": {
-    "hero_title": "プレミアム中古車",
-    "hero_subtitle": "信頼できる高品質な中古車",
-    "phone": "電話",
-    "email": "メール",
-    "get_started": "今すぐ始める",
-    "trusted_brands": "信頼できる自動車ブランド",
-    "about_title": "当社について",
-    "about_description": "私たちは、お客様に高品質な中古車を提供することにコミットした信頼できる中古車販売店です。自動車業界での長年の経験により、信頼性とお客様の満足度を確保するために、すべての車両を慎重に検査しています。",
-    "leadership_title": "リーダーシップチーム",
-    "contact_title": "お問い合わせ",
-    "contact_description": "完璧な中古車を見つける準備はできていますか？今すぐお問い合わせください！",
-    "name": "お名前",
-    "your_email": "メールアドレス",
-    "your_phone": "電話番号",
-    "message": "メッセージ",
-    "send_message": "メッセージを送信",
-    "services": ["高品質中古車", "認定中古車", "融資オプション", "下取りサービス", "専門検査"]
+  ja: {
+    hero_title: "MIRAI プレミアム車両",
+    hero_subtitle: "信頼できる高品質な中古車、新車など",
+    phone: "電話",
+    email: "メール",
+    get_started: "今すぐ始める",
+    trusted_brands: "信頼できる自動車ブランド",
+    about_title: "MIRAIディーラーについて",
+    about_description: "私たちMIRAIは、お客様に高品質な車両と機械を提供することにコミットした信頼できるディーラーです。自動車業界での長年の経験により、信頼性とお客様の満足度を確保するために、すべての車両を慎重に検査しています。",
+    leadership_title: "リーダーシップチーム",
+    contact_title: "お問い合わせ先",
+    contact_description: "高品質な車両とプロフェッショナルなサービスについては、MIRAIまでお気軽にお問い合わせください。",
+    our_services: "私たちのサービス",
+    ceo_title: "最高経営責任者",
+    email_contact: "メール連絡先",
+    services: [
+      "高品質中古車",
+      "認定中古車",
+      "新車",
+      "バイク", 
+      "自転車",
+      "重機",
+      "融資オプション"
+    ]
   }
 };
 
-// Current language state
 let currentLanguage = 'en';
 
 // Initialize application
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM Content Loaded - Multilingual App');
+  console.log('MIRAI Dealership App Initialized');
   
-  // Load saved language preference
-  loadLanguagePreference();
+  // Setup language switching
+  setupLanguageSwitching();
   
-  // Initialize language switcher
-  initLanguageSwitcher();
+  // Setup smooth scrolling
+  setupSmoothScrolling();
   
-  // Initialize form handling
-  initContactForm();
+  // Add brand logo animations
+  observeBrandLogos();
   
-  // Initialize other features
-  observeBrandItems();
-  initAccessibility();
+  // Setup accessibility features
+  setupAccessibility();
   
-  // Initial translation
-  updateContent(currentLanguage);
+  // Setup logo interaction
+  setupLogoInteraction();
+  
+  // Initialize with English
+  currentLanguage = 'en';
+  updateActiveLanguageButton('en');
+  
+  console.log('All systems initialized successfully');
 });
 
-// Language switching functionality
-function initLanguageSwitcher() {
+// Language switching setup
+function setupLanguageSwitching() {
   const langButtons = document.querySelectorAll('.lang-btn');
   
-  langButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const selectedLang = this.getAttribute('data-lang');
-      switchLanguage(selectedLang);
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const newLang = this.getAttribute('data-lang');
+      console.log('Language button clicked:', newLang);
+      if (newLang && newLang !== currentLanguage) {
+        switchLanguage(newLang);
+      }
     });
   });
 }
 
+// Switch language function
 function switchLanguage(lang) {
-  if (lang === currentLanguage) return;
-  
-  console.log('Switching language to:', lang);
-  
-  // Add transition class
-  document.body.classList.add('language-transitioning');
-  
-  // Update active button
-  updateActiveLanguageButton(lang);
-  
-  // Update content after short delay for smooth transition
-  setTimeout(() => {
-    currentLanguage = lang;
-    updateContent(lang);
-    updateHTMLAttributes(lang);
-    saveLanguagePreference(lang);
-    
-    // Remove transition class
-    setTimeout(() => {
-      document.body.classList.remove('language-transitioning');
-    }, 100);
-  }, 150);
-}
-
-function updateActiveLanguageButton(lang) {
-  const langButtons = document.querySelectorAll('.lang-btn');
-  langButtons.forEach(btn => {
-    btn.classList.remove('active');
-    if (btn.getAttribute('data-lang') === lang) {
-      btn.classList.add('active');
-    }
-  });
-}
-
-function updateContent(lang) {
-  const langData = translations[lang];
-  if (!langData) {
-    console.error('Language data not found for:', lang);
+  if (!translations[lang]) {
+    console.error('Translation not found for language:', lang);
     return;
   }
   
+  console.log('Switching to language:', lang);
+  currentLanguage = lang;
+  
+  // Update HTML attributes
+  updateHTMLAttributes(lang);
+  
   // Update all translatable elements
-  const translatableElements = document.querySelectorAll('[data-translate]');
-  translatableElements.forEach(element => {
-    const key = element.getAttribute('data-translate');
-    if (langData[key]) {
-      element.textContent = langData[key];
+  updateTranslatableContent(lang);
+  
+  // Update active language button
+  updateActiveLanguageButton(lang);
+  
+  // Update document title
+  updateDocumentTitle(lang);
+  
+  console.log('Language switch completed:', lang);
+}
+
+// Update HTML attributes for language and direction
+function updateHTMLAttributes(lang) {
+  const html = document.documentElement;
+  const body = document.body;
+  
+  html.setAttribute('lang', lang);
+  body.setAttribute('data-lang', lang);
+  
+  if (lang === 'ar') {
+    html.setAttribute('dir', 'rtl');
+    body.classList.add('rtl');
+  } else {
+    html.setAttribute('dir', 'ltr');
+    body.classList.remove('rtl');
+  }
+}
+
+// Update all translatable content
+function updateTranslatableContent(lang) {
+  const elements = document.querySelectorAll(`[data-en], [data-ar], [data-ja]`);
+  
+  elements.forEach(element => {
+    const translationKey = element.getAttribute(`data-${lang}`);
+    if (translationKey) {
+      element.textContent = translationKey;
     }
   });
   
   // Update services list
   updateServicesList(lang);
   
-  // Update page title
-  document.title = langData.hero_title;
-  
-  // Update form placeholder
-  updateFormPlaceholder(lang);
-  
-  console.log('Content updated to language:', lang);
+  // Update CEO names visibility
+  updateCEONames(lang);
 }
 
+// Update CEO names display based on language
+function updateCEONames(lang) {
+  const nameEnElements = document.querySelectorAll('.name-en');
+  const nameArElements = document.querySelectorAll('.name-ar');
+  
+  if (lang === 'ar') {
+    nameEnElements.forEach(el => el.style.display = 'none');
+    nameArElements.forEach(el => el.style.display = 'block');
+  } else {
+    nameEnElements.forEach(el => el.style.display = 'block');
+    nameArElements.forEach(el => el.style.display = 'none');
+  }
+}
+
+// Update services list specifically
 function updateServicesList(lang) {
+  const serviceItems = document.querySelectorAll('.services-ul li');
   const services = translations[lang].services;
-  const serviceItems = document.querySelectorAll('[data-service]');
   
   serviceItems.forEach((item, index) => {
     if (services[index]) {
@@ -169,78 +207,32 @@ function updateServicesList(lang) {
   });
 }
 
-function updateFormPlaceholder(lang) {
-  const messageTextarea = document.getElementById('message');
-  if (messageTextarea) {
-    const placeholders = {
-      'en': 'Tell us about the type of vehicle you\'re looking for...',
-      'ar': 'أخبرنا عن نوع المركبة التي تبحث عنها...',
-      'ja': 'お探しの車両のタイプについて教えてください...'
-    };
-    messageTextarea.placeholder = placeholders[lang] || placeholders['en'];
-  }
-}
-
-function updateHTMLAttributes(lang) {
-  const html = document.documentElement;
-  const body = document.body;
+// Update active language button
+function updateActiveLanguageButton(lang) {
+  const langButtons = document.querySelectorAll('.lang-btn');
   
-  // Update language attribute
-  html.setAttribute('lang', lang);
-  
-  // Handle RTL for Arabic
-  if (lang === 'ar') {
-    html.setAttribute('dir', 'rtl');
-    body.setAttribute('dir', 'rtl');
-  } else {
-    html.setAttribute('dir', 'ltr');
-    body.setAttribute('dir', 'ltr');
-  }
-  
-  console.log('HTML attributes updated for language:', lang);
-}
-
-function loadLanguagePreference() {
-  try {
-    // Try to get from URL parameter first
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlLang = urlParams.get('lang');
-    
-    if (urlLang && translations[urlLang]) {
-      currentLanguage = urlLang;
-      return;
+  langButtons.forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
     }
-    
-    // Fall back to browser language detection
-    const browserLang = navigator.language || navigator.userLanguage;
-    const shortLang = browserLang.split('-')[0];
-    
-    if (translations[shortLang]) {
-      currentLanguage = shortLang;
-    } else {
-      currentLanguage = 'en'; // Default to English
-    }
-    
-    console.log('Language preference loaded:', currentLanguage);
-  } catch (error) {
-    console.error('Error loading language preference:', error);
-    currentLanguage = 'en';
-  }
+  });
 }
 
-function saveLanguagePreference(lang) {
-  try {
-    // Note: localStorage is not available in this environment, so we'll skip saving
-    // In a real application, you would use: localStorage.setItem('preferredLanguage', lang);
-    console.log('Language preference would be saved:', lang);
-  } catch (error) {
-    console.error('Error saving language preference:', error);
+// Update document title
+function updateDocumentTitle(lang) {
+  const titleElement = document.querySelector('title');
+  if (titleElement) {
+    const newTitle = titleElement.getAttribute(`data-${lang}`);
+    if (newTitle) {
+      titleElement.textContent = newTitle;
+    }
   }
 }
 
 // Smooth scroll to contact section
 function scrollToContact() {
-  console.log('scrollToContact called');
+  console.log('Scrolling to contact section');
   const contactSection = document.getElementById('contact');
   if (contactSection) {
     contactSection.scrollIntoView({
@@ -252,162 +244,34 @@ function scrollToContact() {
   }
 }
 
-// Form handling
-function initContactForm() {
-  const contactForm = document.getElementById('contactForm');
+// Setup smooth scrolling for all internal links
+function setupSmoothScrolling() {
+  // Add global scroll function to window for onclick handlers
+  window.scrollToContact = scrollToContact;
   
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+  // Handle any future internal links
+  document.addEventListener('click', function(e) {
+    if (e.target.matches('a[href^="#"]')) {
       e.preventDefault();
-      console.log('Form submitted');
-      handleFormSubmission();
-    });
-  }
+      const targetId = e.target.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  });
 }
 
-// Handle contact form submission
-function handleFormSubmission() {
-  const form = document.getElementById('contactForm');
-  const formData = new FormData(form);
-  
-  // Get form values
-  const name = formData.get('name');
-  const email = formData.get('email');
-  const phone = formData.get('phone');
-  const message = formData.get('message');
-  
-  console.log('Form data:', { name, email, phone, message });
-  
-  // Validate form
-  const errors = validateForm(formData);
-  if (errors.length > 0) {
-    showMessage(errors.join(', '), 'error');
-    return;
-  }
-  
-  // Show loading state
-  const submitButton = form.querySelector('button[type="submit"]');
-  const originalText = submitButton.textContent;
-  
-  const loadingText = {
-    'en': 'Sending...',
-    'ar': 'جارٍ الإرسال...',
-    'ja': '送信中...'
-  };
-  
-  submitButton.textContent = loadingText[currentLanguage] || loadingText['en'];
-  submitButton.disabled = true;
-  
-  // Simulate form submission
-  setTimeout(() => {
-    const successMessages = {
-      'en': 'Thank you for your message! We will contact you soon.',
-      'ar': 'شكراً لك على رسالتك! سنتواصل معك قريباً.',
-      'ja': 'メッセージありがとうございます！間もなくご連絡いたします。'
-    };
-    
-    // Show success message
-    showMessage(successMessages[currentLanguage] || successMessages['en'], 'success');
-    
-    // Reset form
-    form.reset();
-    
-    // Reset button
-    submitButton.textContent = originalText;
-    submitButton.disabled = false;
-    
-    console.log('Form submission complete');
-  }, 1500);
-}
-
-// Show success/error messages
-function showMessage(message, type) {
-  console.log('Showing message:', message, type);
-  
-  // Remove existing message if any
-  const existingMessage = document.querySelector('.form-message');
-  if (existingMessage) {
-    existingMessage.remove();
-  }
-  
-  // Create message element
-  const messageDiv = document.createElement('div');
-  messageDiv.className = `form-message form-${type}`;
-  messageDiv.textContent = message;
-  
-  // Insert message before the form
-  const contactForm = document.getElementById('contactForm');
-  const formContainer = contactForm.parentElement;
-  formContainer.insertBefore(messageDiv, contactForm);
-  
-  // Remove message after 5 seconds
-  setTimeout(() => {
-    if (messageDiv && messageDiv.parentElement) {
-      messageDiv.remove();
-    }
-  }, 5000);
-}
-
-// Enhanced form validation
-function validateForm(formData) {
-  const errors = [];
-  
-  const name = formData.get('name');
-  const email = formData.get('email');
-  const phone = formData.get('phone');
-  
-  const errorMessages = {
-    'en': {
-      'name': 'Please enter a valid name (at least 2 characters)',
-      'email_required': 'Email is required',
-      'email_invalid': 'Please enter a valid email address',
-      'phone_invalid': 'Please enter a valid phone number'
-    },
-    'ar': {
-      'name': 'يرجى إدخال اسم صحيح (حرفان على الأقل)',
-      'email_required': 'البريد الإلكتروني مطلوب',
-      'email_invalid': 'يرجى إدخال عنوان بريد إلكتروني صحيح',
-      'phone_invalid': 'يرجى إدخال رقم هاتف صحيح'
-    },
-    'ja': {
-      'name': '有効な名前を入力してください（2文字以上）',
-      'email_required': 'メールアドレスは必須です',
-      'email_invalid': '有効なメールアドレスを入力してください',
-      'phone_invalid': '有効な電話番号を入力してください'
-    }
-  };
-  
-  const messages = errorMessages[currentLanguage] || errorMessages['en'];
-  
-  if (!name || name.trim().length < 2) {
-    errors.push(messages.name);
-  }
-  
-  if (!email) {
-    errors.push(messages.email_required);
-  } else {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      errors.push(messages.email_invalid);
-    }
-  }
-  
-  if (phone && phone.length > 0) {
-    const phoneRegex = /^[\+]?[\d\s\-\(\)]{10,}$/;
-    if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
-      errors.push(messages.phone_invalid);
-    }
-  }
-  
-  return errors;
-}
-
-// Intersection Observer for brand items animation
-function observeBrandItems() {
+// Intersection Observer for brand logos animation
+function observeBrandLogos() {
   const brandItems = document.querySelectorAll('.brand-item');
   
   if (brandItems.length === 0) {
-    console.log('No brand items found');
+    console.log('No brand items found for animation');
     return;
   }
   
@@ -423,22 +287,47 @@ function observeBrandItems() {
           entry.target.style.opacity = '1';
           entry.target.style.transform = 'translateY(0)';
         }, index * 100);
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
   
   // Initially hide brand items and observe them
-  brandItems.forEach((item) => {
+  brandItems.forEach((item, index) => {
     item.style.opacity = '0';
-    item.style.transform = 'translateY(20px)';
-    item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    item.style.transform = 'translateY(30px)';
+    item.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(item);
   });
 }
 
-// Initialize accessibility features
-function initAccessibility() {
-  // Add focus management for better accessibility
+// Setup logo interaction
+function setupLogoInteraction() {
+  const logo = document.querySelector('.mirai-logo');
+  if (logo) {
+    logo.addEventListener('click', function() {
+      // Add a small easter egg - pulse effect
+      this.style.animation = 'pulse 0.6s ease-in-out';
+      setTimeout(() => {
+        this.style.animation = '';
+      }, 600);
+    });
+  }
+}
+
+// CSS for pulse animation (injected via JS)
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+`;
+document.head.appendChild(style);
+
+// Setup accessibility features
+function setupAccessibility() {
+  // Enhanced focus management
   const focusableElements = document.querySelectorAll('button, input, textarea, select, a[href]');
   
   focusableElements.forEach(element => {
@@ -453,34 +342,116 @@ function initAccessibility() {
     });
   });
   
-  // Handle phone number clicks for better mobile experience
-  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-  
-  phoneLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      if (!navigator.userAgent.match(/mobile/i)) {
-        // Optional: Add desktop handling here if needed
+  // Keyboard navigation for language switcher
+  const langButtons = document.querySelectorAll('.lang-btn');
+  langButtons.forEach((btn, index) => {
+    btn.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const direction = e.key === 'ArrowRight' ? 1 : -1;
+        const nextIndex = (index + direction + langButtons.length) % langButtons.length;
+        langButtons[nextIndex].focus();
       }
     });
   });
 }
 
-// Smooth scroll for internal links
-document.addEventListener('click', function(e) {
-  if (e.target.matches('a[href^="#"]')) {
-    e.preventDefault();
-    const targetId = e.target.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
+// Handle phone number clicks for better mobile experience
+document.addEventListener('DOMContentLoaded', function() {
+  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+  
+  phoneLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      console.log('Phone link clicked:', this.href);
+    });
+  });
+});
+
+// Handle email links
+document.addEventListener('DOMContentLoaded', function() {
+  const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+  
+  emailLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      console.log('Email link clicked:', this.href);
+    });
+  });
+});
+
+// Brand logo error handling
+document.addEventListener('DOMContentLoaded', function() {
+  const brandLogos = document.querySelectorAll('.brand-logo');
+  
+  brandLogos.forEach((img, index) => {
+    img.addEventListener('error', function() {
+      console.error(`Failed to load brand logo ${index + 1}:`, this.src);
+      // Keep the image element but show a fallback
+      this.style.opacity = '0.5';
+      this.style.filter = 'grayscale(100%)';
+      this.alt = `Brand Logo ${index + 1}`;
+    });
     
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
+    img.addEventListener('load', function() {
+      console.log(`Successfully loaded brand logo ${index + 1}`);
+      this.style.opacity = '1';
+      this.style.filter = 'contrast(1.1) brightness(1.05)';
+    });
+  });
+});
+
+// MIRAI logo error handling
+document.addEventListener('DOMContentLoaded', function() {
+  const miraiLogo = document.querySelector('.mirai-logo');
+  if (miraiLogo) {
+    miraiLogo.addEventListener('error', function() {
+      console.error('Failed to load MIRAI logo');
+      // Fallback to text logo
+      const logoContainer = this.parentElement;
+      this.style.display = 'none';
+      logoContainer.innerHTML = '<div class="text-logo">MIRAI</div>';
+      
+      // Add styles for text logo
+      const textLogo = logoContainer.querySelector('.text-logo');
+      if (textLogo) {
+        textLogo.style.fontSize = '3rem';
+        textLogo.style.fontWeight = 'bold';
+        textLogo.style.color = '#FFC107';
+        textLogo.style.textShadow = '2px 2px 4px rgba(0,0,0,0.3)';
+        textLogo.style.cursor = 'pointer';
+      }
+    });
+    
+    miraiLogo.addEventListener('load', function() {
+      console.log('MIRAI logo loaded successfully');
+    });
   }
 });
 
-// Export functions for global access
-window.scrollToContact = scrollToContact;
-window.switchLanguage = switchLanguage;
+// Scroll effects
+let isScrolling = false;
+
+window.addEventListener('scroll', function() {
+  if (!isScrolling) {
+    window.requestAnimationFrame(function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Add scroll effects to language switcher
+      const langSwitcher = document.querySelector('.language-switcher');
+      if (langSwitcher) {
+        if (scrollTop > 100) {
+          langSwitcher.style.background = 'rgba(255, 255, 255, 0.98)';
+          langSwitcher.style.backdropFilter = 'blur(15px)';
+        } else {
+          langSwitcher.style.background = 'rgba(255, 255, 255, 0.95)';
+          langSwitcher.style.backdropFilter = 'blur(10px)';
+        }
+      }
+      
+      isScrolling = false;
+    });
+    
+    isScrolling = true;
+  }
+});
+
+console.log('MIRAI Dealership JavaScript loaded successfully');

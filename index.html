@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-translate="hero_title">Premium Used Cars</title>
+    <title data-en="MIRAI Premium Vehicles" data-ar="ميراي للمركبات المميزة" data-ja="MIRAI プレミアム車両">MIRAI Premium Vehicles</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Language Switcher -->
     <div class="language-switcher">
-        <button class="lang-btn active" data-lang="en">English</button>
-        <button class="lang-btn" data-lang="ar">العربية</button>
-        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">AR</button>
+        <button class="lang-btn" data-lang="ja">JP</button>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title" data-translate="hero_title">Premium Used Cars</h1>
-                <p class="hero-subtitle" data-translate="hero_subtitle">Quality Pre-Owned Vehicles You Can Trust</p>
+                <div class="logo-container">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/bfb41622-b59c-4f8d-964a-cce8cec2ce00.png" alt="MIRAI Logo" class="mirai-logo">
+                </div>
+                <h1 class="hero-title" data-en="MIRAI Premium Vehicles" data-ar="ميراي للمركبات المميزة" data-ja="MIRAI プレミアム車両">MIRAI Premium Vehicles</h1>
+                <p class="hero-subtitle" data-en="Quality Used Cars, New Vehicles, and More You Can Trust" data-ar="سيارات مستعملة عالية الجودة ومركبات جديدة والمزيد يمكنك الوثوق به" data-ja="信頼できる高品質な中古車、新車など">Quality Used Cars, New Vehicles, and More You Can Trust</p>
                 <div class="hero-contact">
                     <div class="contact-item">
-                        <span class="contact-label" data-translate="phone">Phone</span>:
+                        <span class="contact-label" data-en="Phone" data-ar="الهاتف" data-ja="電話">Phone</span>
                         <a href="tel:+817038123707" class="contact-link">+817038123707</a>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label" data-translate="email">Email</span>:
+                        <span class="contact-label" data-en="Email" data-ar="البريد الإلكتروني" data-ja="メール">Email</span>
                         <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
                     </div>
                 </div>
-                <button class="btn btn--primary btn--lg" onclick="scrollToContact()" data-translate="get_started">Get Started Today</button>
+                <button class="btn btn--primary btn--lg" onclick="scrollToContact()" data-en="Get Started Today" data-ar="ابدأ اليوم" data-ja="今すぐ始める">Get Started Today</button>
             </div>
         </div>
     </section>
@@ -39,37 +42,34 @@
     <!-- Brand Logos Section -->
     <section class="brands">
         <div class="container">
-            <h2 class="section-title" data-translate="trusted_brands">Trusted Automotive Brands</h2>
+            <h2 class="section-title" data-en="Trusted Automotive Brands" data-ar="علامات تجارية موثوقة للسيارات" data-ja="信頼できる自動車ブランド">Trusted Automotive Brands</h2>
             <div class="brands-grid">
                 <div class="brand-item">
-                    <div class="brand-name">NISSAN</div>
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/toyota-1-logo-png-transparent.png" alt="Toyota" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMiI+VG95b3RhPC90ZXh0Pjwvc3ZnPg=='">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">BMW</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo.png" alt="Honda" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMiI+SG9uZGE8L3RleHQ+PC9zdmc+'">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">MERCEDES-BENZ</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Nissan-Logo.png" alt="Nissan" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMiI+Tmlzc2FuPC90ZXh0Pjwvc3ZnPg=='">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">HONDA</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/BMW-Logo.png" alt="BMW" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMiI+Qk1XPC90ZXh0Pjwvc3ZnPg=='">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">MAZDA</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Mercedes-Logo.png" alt="Mercedes-Benz" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMCI+TWVyY2VkZXM8L3RleHQ+PC9zdmc+'">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">HYUNDAI</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2021/04/Mazda-Logo.png" alt="Mazda" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMiI+TWF6ZGE8L3RleHQ+PC9zdmc+'">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">KIA</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2020/06/Subaru-Logo.png" alt="Subaru" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMiI+U3ViYXJ1PC90ZXh0Pjwvc3ZnPg=='">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">MITSUBISHI</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2021/03/Hyundai-Logo.png" alt="Hyundai" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSIxMCI+SHl1bmRhaTwvdGV4dD48L3N2Zz4='">
                 </div>
                 <div class="brand-item">
-                    <div class="brand-name">SUBARU</div>
-                </div>
-                <div class="brand-item">
-                    <div class="brand-name">LEXUS</div>
+                    <img src="https://logos-world.net/wp-content/uploads/2021/04/Mitsubishi-Logo.png" alt="Mitsubishi" class="brand-logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2NjYyIvPjx0ZXh0IHg9IjUwIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzMzMyIgZm9udC1zaXplPSI5Ij5NaXRzdWJpc2hpPC90ZXh0Pjwvc3ZnPg=='">
                 </div>
             </div>
         </div>
@@ -78,41 +78,53 @@
     <!-- About Section -->
     <section class="about">
         <div class="container">
-            <h2 class="section-title" data-translate="about_title">About Our Dealership</h2>
+            <h2 class="section-title" data-en="About MIRAI Dealership" data-ar="حول وكالة ميراي" data-ja="MIRAIディーラーについて">About MIRAI Dealership</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-translate="about_description">We are a trusted used car dealership committed to providing quality pre-owned vehicles to our customers. With years of experience in the automotive industry, we carefully inspect every vehicle to ensure reliability and customer satisfaction.</p>
+                    <p data-en="We are MIRAI, a trusted dealership committed to providing quality vehicles and machinery to our customers. With years of experience in the automotive industry, we carefully inspect every vehicle to ensure reliability and customer satisfaction." data-ar="نحن ميراي، وكالة موثوقة ملتزمة بتوفير مركبات وآلات عالية الجودة لعملائنا. مع سنوات من الخبرة في صناعة السيارات، نقوم بفحص كل مركبة بعناية لضمان الموثوقية ورضا العملاء." data-ja="私たちMIRAIは、お客様に高品質な車両と機械を提供することにコミットした信頼できるディーラーです。自動車業界での長年の経験により、信頼性とお客様の満足度を確保するために、すべての車両を慎重に検査しています。">We are MIRAI, a trusted dealership committed to providing quality vehicles and machinery to our customers. With years of experience in the automotive industry, we carefully inspect every vehicle to ensure reliability and customer satisfaction.</p>
                     <div class="services-list">
-                        <h3>Our Services</h3>
-                        <ul class="services-items">
-                            <li data-service="0">Quality Used Cars</li>
-                            <li data-service="1">Certified Pre-owned Vehicles</li>
-                            <li data-service="2">Financing Options</li>
-                            <li data-service="3">Trade-in Services</li>
-                            <li data-service="4">Professional Inspection</li>
+                        <h3 data-en="Our Services" data-ar="خدماتنا" data-ja="私たちのサービス">Our Services</h3>
+                        <ul class="services-ul">
+                            <li data-en="Quality Used Cars" data-ar="سيارات مستعملة عالية الجودة" data-ja="高品質中古車">Quality Used Cars</li>
+                            <li data-en="Certified Pre-owned Vehicles" data-ar="مركبات مستعملة معتمدة" data-ja="認定中古車">Certified Pre-owned Vehicles</li>
+                            <li data-en="New Cars" data-ar="سيارات جديدة" data-ja="新車">New Cars</li>
+                            <li data-en="Bikes" data-ar="دراجات نارية" data-ja="バイク">Bikes</li>
+                            <li data-en="Bicycles" data-ar="دراجات هوائية" data-ja="自転車">Bicycles</li>
+                            <li data-en="Heavy Machinery" data-ar="آلات ثقيلة" data-ja="重機">Heavy Machinery</li>
+                            <li data-en="Financing Options" data-ar="خيارات التمويل" data-ja="融資オプション">Financing Options</li>
                         </ul>
                     </div>
                 </div>
                 <div class="leadership">
-                    <h3 data-translate="leadership_title">Our Leadership Team</h3>
+                    <h3 data-en="Our Leadership Team" data-ar="فريق القيادة لدينا" data-ja="リーダーシップチーム">Our Leadership Team</h3>
                     <div class="ceo-list">
                         <div class="ceo-item">
-                            <h4>Layth Jawad Altufaili</h4>
-                            <p>Chief Executive Officer</p>
+                            <h4 class="ceo-name">
+                                <span class="name-en">Layth Jawad Altufaili</span>
+                                <span class="name-ar" style="display: none;">ليث جواد الطفيلي</span>
+                            </h4>
+                            <p data-en="Chief Executive Officer" data-ar="الرئيس التنفيذي" data-ja="最高経営責任者">Chief Executive Officer</p>
+                            <div class="ceo-contact">
+                                <span class="contact-label" data-en="Phone" data-ar="الهاتف" data-ja="電話">Phone</span>
+                                <a href="tel:+817038123707" class="contact-link">+817038123707</a>
+                            </div>
                         </div>
                         <div class="ceo-item">
-                            <h4>Rafid Jawad Altufaili</h4>
-                            <p>Chief Executive Officer</p>
+                            <h4 class="ceo-name">
+                                <span class="name-en">Rafid Jawad Altufaili</span>
+                                <span class="name-ar" style="display: none;">رافد جواد الطفيلي</span>
+                            </h4>
+                            <p data-en="Chief Executive Officer" data-ar="الرئيس التنفيذي" data-ja="最高経営責任者">Chief Executive Officer</p>
+                            <div class="ceo-contact">
+                                <span class="contact-label" data-en="Phone" data-ar="الهاتف" data-ja="電話">Phone</span>
+                                <a href="tel:+818048083366" class="contact-link">+818048083366</a>
+                            </div>
                         </div>
                     </div>
                     <div class="about-contact">
-                        <h4>Contact Information</h4>
+                        <h4 data-en="Contact Information" data-ar="معلومات الاتصال" data-ja="お問い合わせ先">Contact Information</h4>
                         <div class="contact-item">
-                            <span class="contact-label" data-translate="phone">Phone</span>:
-                            <a href="tel:+817038123707" class="contact-link">+817038123707</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label" data-translate="email">Email</span>:
+                            <span class="contact-label" data-en="Email" data-ar="البريد الإلكتروني" data-ja="メール">Email</span>
                             <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
                         </div>
                     </div>
@@ -124,42 +136,38 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title" data-translate="contact_title">Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Details</h3>
+            <h2 class="section-title" data-en="Contact Information" data-ar="معلومات الاتصال" data-ja="お問い合わせ先">Contact Information</h2>
+            <div class="contact-content-simple">
+                <div class="contact-info-centered">
+                    <p class="contact-description" data-en="Get in touch with MIRAI for quality vehicles and professional service." data-ar="تواصل مع ميراي للحصول على مركبات عالية الجودة وخدمة مهنية." data-ja="高品質な車両とプロフェッショナルなサービスについては、MIRAIまでお気軽にお問い合わせください。">Get in touch with MIRAI for quality vehicles and professional service.</p>
+                    
                     <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-label" data-translate="phone">Phone</span>:
-                            <a href="tel:+817038123707" class="contact-link">+817038123707</a>
+                        <div class="contact-detail-card">
+                            <h4>Layth Jawad Altufaili</h4>
+                            <p class="arabic-name">ليث جواد الطفيلي</p>
+                            <div class="contact-item">
+                                <span class="contact-label" data-en="Phone" data-ar="الهاتف" data-ja="電話">Phone</span>
+                                <a href="tel:+817038123707" class="contact-link">+817038123707</a>
+                            </div>
                         </div>
-                        <div class="contact-item">
-                            <span class="contact-label" data-translate="email">Email</span>:
-                            <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
+                        
+                        <div class="contact-detail-card">
+                            <h4>Rafid Jawad Altufaili</h4>
+                            <p class="arabic-name">رافد جواد الطفيلي</p>
+                            <div class="contact-item">
+                                <span class="contact-label" data-en="Phone" data-ar="الهاتف" data-ja="電話">Phone</span>
+                                <a href="tel:+818048083366" class="contact-link">+818048083366</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-card">
+                            <h4 data-en="Email Contact" data-ar="الاتصال عبر البريد الإلكتروني" data-ja="メール連絡先">Email Contact</h4>
+                            <div class="contact-item">
+                                <span class="contact-label" data-en="Email" data-ar="البريد الإلكتروني" data-ja="メール">Email</span>
+                                <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
+                            </div>
                         </div>
                     </div>
-                    <p data-translate="contact_description">Ready to find your perfect used car? Get in touch with us today!</p>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label" data-translate="name">Full Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label" data-translate="your_email">Your Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="form-label" data-translate="your_phone">Your Phone</label>
-                            <input type="tel" id="phone" name="phone" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label" data-translate="message">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about the type of vehicle you're looking for..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width" data-translate="send_message">Send Message</button>
-                    </form>
                 </div>
             </div>
         </div>

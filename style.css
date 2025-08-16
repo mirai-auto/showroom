@@ -763,20 +763,17 @@ select.form-control {
   --color-text-secondary: var(--dealership-gray);
 }
 
-/* Multilingual Font Support */
-body {
-  font-family: 'FKGroteskNeue', 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+/* Font families */
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Arabic language support */
 [dir="rtl"] {
-  font-family: 'Noto Sans Arabic', 'FKGroteskNeue', 'Noto Sans', Arial, sans-serif;
-  text-align: right;
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Japanese language support */
-html[lang="ja"] {
-  font-family: 'Noto Sans JP', 'FKGroteskNeue', 'Noto Sans', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+html[lang="ja"], [lang="ja"] {
+  font-family: 'Noto Sans JP', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Language Switcher */
@@ -784,88 +781,53 @@ html[lang="ja"] {
   position: fixed;
   top: var(--space-20);
   right: var(--space-20);
-  z-index: 1000;
   display: flex;
-  background: var(--dealership-white);
+  gap: var(--space-8);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: var(--space-8);
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-lg);
-  border: 2px solid var(--dealership-yellow);
-  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(211, 47, 47, 0.1);
+}
+
+[dir="rtl"] .language-switcher {
+  right: auto;
+  left: var(--space-20);
 }
 
 .lang-btn {
+  padding: var(--space-6) var(--space-12);
+  border: 2px solid var(--dealership-red);
   background: transparent;
-  border: none;
-  padding: var(--space-8) var(--space-16);
+  color: var(--dealership-red);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-standard);
+  transition: all var(--duration-fast) var(--ease-standard);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--dealership-gray);
-  border-right: 1px solid var(--dealership-yellow);
-}
-
-.lang-btn:last-child {
-  border-right: none;
+  min-width: 40px;
 }
 
 .lang-btn:hover {
-  background: var(--dealership-yellow-light);
-  color: var(--dealership-black);
+  background: var(--dealership-red);
+  color: var(--dealership-white);
 }
 
 .lang-btn.active {
   background: var(--dealership-red);
   color: var(--dealership-white);
-}
-
-.lang-btn:focus {
-  outline: 2px solid var(--dealership-red);
-  outline-offset: 2px;
-}
-
-/* RTL adjustments for Arabic */
-[dir="rtl"] .language-switcher {
-  left: var(--space-20);
-  right: auto;
-}
-
-[dir="rtl"] .hero-contact {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .contact-item {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .about-content {
-  direction: rtl;
-}
-
-[dir="rtl"] .contact-content {
-  direction: rtl;
-}
-
-[dir="rtl"] .services-list li:before {
-  margin-right: 0;
-  margin-left: var(--space-8);
-}
-
-/* Language transition effects */
-[data-translate] {
-  transition: opacity var(--duration-normal) var(--ease-standard);
-}
-
-.language-transitioning [data-translate] {
-  opacity: 0.7;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
 }
 
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--dealership-red) 0%, var(--dealership-red-dark) 100%);
   color: var(--dealership-white);
-  padding: 80px 0;
+  padding: 100px 0 80px 0;
   text-align: center;
+  position: relative;
 }
 
 .hero-content {
@@ -873,11 +835,27 @@ html[lang="ja"] {
   margin: 0 auto;
 }
 
+.logo-container {
+  margin-bottom: var(--space-32);
+}
+
+.mirai-logo {
+  max-width: 200px;
+  height: auto;
+  filter: brightness(1.1) contrast(1.1);
+  transition: transform var(--duration-normal) var(--ease-standard);
+}
+
+.mirai-logo:hover {
+  transform: scale(1.05);
+}
+
 .hero-title {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-16);
   color: var(--dealership-white);
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
@@ -885,6 +863,7 @@ html[lang="ja"] {
   margin-bottom: var(--space-32);
   color: var(--dealership-yellow-light);
   font-weight: var(--font-weight-medium);
+  line-height: 1.4;
 }
 
 .hero-contact {
@@ -899,6 +878,10 @@ html[lang="ja"] {
   display: flex;
   align-items: center;
   gap: var(--space-8);
+}
+
+[dir="rtl"] .contact-item {
+  flex-direction: row-reverse;
 }
 
 .contact-label {
@@ -943,13 +926,14 @@ html[lang="ja"] {
   font-weight: var(--font-weight-bold);
   color: var(--dealership-black);
   margin-bottom: var(--space-32);
+  letter-spacing: -0.01em;
 }
 
 .brands-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-24);
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -963,7 +947,7 @@ html[lang="ja"] {
   box-shadow: var(--shadow-sm);
   transition: all var(--duration-normal) var(--ease-standard);
   border: 2px solid transparent;
-  min-height: 120px;
+  aspect-ratio: 1.2;
 }
 
 .brand-item:hover {
@@ -972,13 +956,13 @@ html[lang="ja"] {
   border-color: var(--dealership-yellow);
 }
 
-.brand-name {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  color: var(--dealership-red);
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+.brand-logo {
+  max-width: 120px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: contrast(1.1) brightness(1.05);
 }
 
 /* About Section */
@@ -992,6 +976,10 @@ html[lang="ja"] {
   grid-template-columns: 1fr 1fr;
   gap: var(--space-32);
   align-items: start;
+}
+
+[dir="rtl"] .about-content {
+  direction: rtl;
 }
 
 .about-text p {
@@ -1009,7 +997,7 @@ html[lang="ja"] {
   margin-bottom: var(--space-16);
 }
 
-.services-list ul {
+.services-list .services-ul {
   list-style: none;
   padding: 0;
 }
@@ -1019,13 +1007,26 @@ html[lang="ja"] {
   border-bottom: 1px solid var(--dealership-gray-light);
   color: var(--dealership-gray);
   font-weight: var(--font-weight-medium);
+  position: relative;
+  padding-left: var(--space-24);
+}
+
+[dir="rtl"] .services-list li {
+  padding-left: 0;
+  padding-right: var(--space-24);
 }
 
 .services-list li:before {
   content: "✓";
   color: var(--dealership-yellow-dark);
   font-weight: bold;
-  margin-right: var(--space-8);
+  position: absolute;
+  left: 0;
+}
+
+[dir="rtl"] .services-list li:before {
+  left: auto;
+  right: 0;
 }
 
 .ceo-list {
@@ -1034,10 +1035,11 @@ html[lang="ja"] {
 
 .ceo-item {
   background: var(--dealership-gray-light);
-  padding: var(--space-16);
+  padding: var(--space-20);
   border-radius: var(--radius-base);
   margin-bottom: var(--space-16);
   border-left: 4px solid var(--dealership-red);
+  position: relative;
 }
 
 [dir="rtl"] .ceo-item {
@@ -1045,17 +1047,41 @@ html[lang="ja"] {
   border-right: 4px solid var(--dealership-red);
 }
 
-.ceo-item h4 {
+.ceo-name {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
   color: var(--dealership-black);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.name-en {
+  font-size: var(--font-size-lg);
+}
+
+.name-ar {
+  font-size: var(--font-size-md);
+  color: var(--dealership-red);
+  font-weight: var(--font-weight-medium);
+  font-family: 'Noto Sans Arabic', sans-serif;
 }
 
 .ceo-item p {
   color: var(--dealership-red);
   font-weight: var(--font-weight-medium);
-  margin: 0;
+  margin-bottom: var(--space-12);
+}
+
+.ceo-contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+[dir="rtl"] .ceo-contact {
+  flex-direction: row-reverse;
 }
 
 .about-contact h4 {
@@ -1084,135 +1110,127 @@ html[lang="ja"] {
   color: var(--dealership-red-dark);
 }
 
-/* Contact Section */
+/* Contact Section - Simplified */
 .contact {
   padding: 80px 0;
   background: var(--color-bg-1);
 }
 
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
-  align-items: start;
+.contact-content-simple {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.contact-info h3 {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--dealership-red);
-  margin-bottom: var(--space-16);
+.contact-info-centered {
+  text-align: center;
 }
 
-.contact-details {
-  margin-bottom: var(--space-24);
-}
-
-.contact-details .contact-item {
-  margin-bottom: var(--space-12);
-  justify-content: flex-start;
-}
-
-.contact-details .contact-label {
-  color: var(--dealership-black);
-  font-weight: var(--font-weight-medium);
-  min-width: 60px;
-}
-
-.contact-details .contact-link {
-  color: var(--dealership-red);
-  font-weight: var(--font-weight-medium);
-}
-
-.contact-details .contact-link:hover {
-  color: var(--dealership-red-dark);
-}
-
-.contact-info p {
+.contact-description {
+  font-size: var(--font-size-lg);
   color: var(--dealership-gray);
+  margin-bottom: var(--space-32);
   line-height: var(--line-height-normal);
 }
 
-/* Form Styling */
-.contact-form {
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-24);
+  margin-top: var(--space-32);
+}
+
+.contact-detail-card {
   background: var(--dealership-white);
-  padding: var(--space-32);
+  padding: var(--space-24);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--dealership-yellow);
-}
-
-.form-control {
-  border: 2px solid var(--dealership-gray-light);
-  transition: border-color var(--duration-fast) var(--ease-standard);
-}
-
-.form-control:focus {
-  border-color: var(--dealership-red);
-  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
-}
-
-.form-label {
-  color: var(--dealership-black);
-  font-weight: var(--font-weight-semibold);
-}
-
-/* Form Messages */
-.form-message {
-  padding: var(--space-16);
-  border-radius: var(--radius-base);
-  margin-bottom: var(--space-16);
-  text-align: center;
-  font-weight: var(--font-weight-medium);
-  animation: slideIn 0.3s ease-out;
-}
-
-.form-success {
-  background: rgba(255, 193, 7, 0.15);
+  box-shadow: var(--shadow-sm);
   border: 2px solid var(--dealership-yellow);
-  color: var(--dealership-black);
+  transition: all var(--duration-normal) var(--ease-standard);
 }
 
-.form-error {
-  background: rgba(211, 47, 47, 0.15);
-  border: 2px solid var(--dealership-red);
+.contact-detail-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--dealership-red);
+}
+
+.contact-detail-card h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--dealership-black);
+  margin-bottom: var(--space-8);
+}
+
+.arabic-name {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-size: var(--font-size-md);
+  color: var(--dealership-red);
+  margin-bottom: var(--space-16);
+  font-weight: var(--font-weight-medium);
+}
+
+.contact-detail-card .contact-item {
+  justify-content: center;
+  gap: var(--space-12);
+}
+
+.contact-detail-card .contact-label {
+  color: var(--dealership-gray);
+  font-weight: var(--font-weight-medium);
+}
+
+.contact-detail-card .contact-link {
+  color: var(--dealership-red);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+}
+
+.contact-detail-card .contact-link:hover {
   color: var(--dealership-red-dark);
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Language-specific styles */
+[data-lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[data-lang="ar"] .hero-title,
+[data-lang="ar"] .hero-subtitle,
+[data-lang="ar"] .section-title,
+[data-lang="ar"] .contact-description {
+  text-align: center;
+}
+
+[data-lang="ar"] .contact-item {
+  flex-direction: row-reverse;
+}
+
+[data-lang="ja"] {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Content visibility based on language */
+.content-transition {
+  transition: opacity var(--duration-normal) var(--ease-standard);
+}
+
+.content-fade-out {
+  opacity: 0.3;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .language-switcher {
-    top: var(--space-12);
-    right: var(--space-12);
-  }
-  
-  [dir="rtl"] .language-switcher {
-    left: var(--space-12);
-    right: auto;
-  }
-  
-  .lang-btn {
-    padding: var(--space-6) var(--space-12);
-    font-size: var(--font-size-xs);
-  }
-  
   .hero {
-    padding: 60px 0;
+    padding: 80px 0 60px 0;
   }
   
   .hero-title {
     font-size: var(--font-size-3xl);
+  }
+  
+  .mirai-logo {
+    max-width: 150px;
   }
   
   .hero-contact {
@@ -1220,15 +1238,18 @@ html[lang="ja"] {
     gap: var(--space-16);
   }
   
-  .about-content,
-  .contact-content {
+  .about-content {
     grid-template-columns: 1fr;
     gap: var(--space-24);
   }
   
   .brands-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-16);
+  }
+  
+  .contact-details {
+    grid-template-columns: 1fr;
   }
   
   .brands,
@@ -1237,8 +1258,21 @@ html[lang="ja"] {
     padding: 60px 0;
   }
   
-  .contact-form {
-    padding: var(--space-24);
+  .language-switcher {
+    top: var(--space-16);
+    right: var(--space-16);
+    padding: var(--space-6);
+  }
+  
+  [dir="rtl"] .language-switcher {
+    right: auto;
+    left: var(--space-16);
+  }
+  
+  .lang-btn {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-xs);
+    min-width: 35px;
   }
 }
 
@@ -1256,16 +1290,25 @@ html[lang="ja"] {
   }
   
   .brands-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 300px;
   }
   
   .brand-item {
-    padding: var(--space-16);
-    min-height: 100px;
+    padding: var(--space-20);
   }
   
-  .brand-name {
-    font-size: var(--font-size-md);
+  .brand-logo {
+    max-width: 100px;
+    max-height: 70px;
+  }
+  
+  .mirai-logo {
+    max-width: 120px;
+  }
+  
+  .contact-detail-card {
+    padding: var(--space-20);
   }
 }
 
@@ -1279,13 +1322,30 @@ html {
   scroll-margin-top: 20px;
 }
 
-/* Language-specific adjustments */
-html[lang="ja"] .hero-title,
-html[lang="ja"] .section-title {
-  letter-spacing: 0.02em;
+/* Loading state */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
 }
 
-html[lang="ar"] .hero-title,
-html[lang="ar"] .section-title {
-  font-weight: var(--font-weight-semibold);
+/* Accessibility improvements */
+:focus-visible {
+  outline: 2px solid var(--dealership-red);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .language-switcher {
+    display: none;
+  }
+  
+  .hero {
+    background: var(--dealership-white);
+    color: var(--dealership-black);
+  }
+  
+  .contact-link {
+    color: var(--dealership-black);
+  }
 }
