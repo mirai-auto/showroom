@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="hero_title">Premium Used Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="ar">العربية</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="hero_title">Premium Used Cars</h1>
+                <p class="hero-subtitle" data-translate="hero_subtitle">Quality Pre-Owned Vehicles You Can Trust</p>
+                <div class="hero-contact">
+                    <div class="contact-item">
+                        <span class="contact-label" data-translate="phone">Phone</span>:
+                        <a href="tel:+817038123707" class="contact-link">+817038123707</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-translate="email">Email</span>:
+                        <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--lg" onclick="scrollToContact()" data-translate="get_started">Get Started Today</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Logos Section -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="section-title" data-translate="trusted_brands">Trusted Automotive Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <div class="brand-name">NISSAN</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">BMW</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">MERCEDES-BENZ</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">HONDA</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">MAZDA</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">HYUNDAI</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">KIA</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">MITSUBISHI</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">SUBARU</div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-name">LEXUS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about_title">About Our Dealership</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about_description">We are a trusted used car dealership committed to providing quality pre-owned vehicles to our customers. With years of experience in the automotive industry, we carefully inspect every vehicle to ensure reliability and customer satisfaction.</p>
+                    <div class="services-list">
+                        <h3>Our Services</h3>
+                        <ul class="services-items">
+                            <li data-service="0">Quality Used Cars</li>
+                            <li data-service="1">Certified Pre-owned Vehicles</li>
+                            <li data-service="2">Financing Options</li>
+                            <li data-service="3">Trade-in Services</li>
+                            <li data-service="4">Professional Inspection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leadership">
+                    <h3 data-translate="leadership_title">Our Leadership Team</h3>
+                    <div class="ceo-list">
+                        <div class="ceo-item">
+                            <h4>Layth Jawad Altufaili</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                        <div class="ceo-item">
+                            <h4>Rafid Jawad Altufaili</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </div>
+                    <div class="about-contact">
+                        <h4>Contact Information</h4>
+                        <div class="contact-item">
+                            <span class="contact-label" data-translate="phone">Phone</span>:
+                            <a href="tel:+817038123707" class="contact-link">+817038123707</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label" data-translate="email">Email</span>:
+                            <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label" data-translate="phone">Phone</span>:
+                            <a href="tel:+817038123707" class="contact-link">+817038123707</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label" data-translate="email">Email</span>:
+                            <a href="mailto:miraiboeki@gmail.com" class="contact-link">miraiboeki@gmail.com</a>
+                        </div>
+                    </div>
+                    <p data-translate="contact_description">Ready to find your perfect used car? Get in touch with us today!</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-translate="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-translate="your_email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label" data-translate="your_phone">Your Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-translate="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about the type of vehicle you're looking for..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width" data-translate="send_message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
